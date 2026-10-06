@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   1. RESET & BOX-MODEL
+   ========================================================================== */
+
+/* More intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins so layouts remain predictable */
+body,
+h1, h2, h3, h4, p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. ROOT & BASE STYLES
+   ========================================================================== */
+
+
+body {
+  /* Set core body defaults */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid blueviolet;
+}
+
+/* ==========================================================================
+   3. TYPOGRAPHY & INTERACTION
+   ========================================================================== */
+
+/* Make headings feel cohesive */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  text-wrap: balance; /* Prevents awkward single-word text wrapping */
+}
+
+/* Improve link readability and underlines */
+a {
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Add a pointer cursor to interactive buttons */
+button, 
+[type="button"], 
+[type="reset"], 
+[type="submit"] {
+  cursor: pointer;
+}
+
